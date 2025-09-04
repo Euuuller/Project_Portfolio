@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional Data Science Portfolio - Showcasing machine learning projects, data analysis expertise, and technical skills">
+    <meta name="keywords" content="data science, machine learning, portfolio, analytics, python, AI">
+    <meta name="author" content="Euller dos Santos Rodrigues Duarte">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Data Science Portfolio | Euller dos Santos Rodrigues Duarte">
+    <meta property="og:description"
+        content="Professional portfolio showcasing data science and machine learning expertise.">
+    <meta property="og:image"
+        content="https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/1200x630/000000/ffffff?text=Euller's+Portfolio">
+    <meta property="og:image:alt" content="A preview of the Data Science Portfolio website.">
+    <meta property="og:url" content="https://seudominio.com">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Data Science Portfolio | Euller dos Santos Rodrigues Duarte">
+    <meta name="twitter:description"
+        content="Professional portfolio showcasing data science and machine learning expertise.">
+    <meta name="twitter:image"
+        content="https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/1200x630/000000/ffffff?text=Euller's+Portfolio">
+
+
+    <title>Data Science Portfolio | Euller dos Santos Rodrigues Duarte</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="./assets/css/styles.css" as="style">
+    <link rel="preload" href="./assets/js/main.js" as="script">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Devicon for Tech Icons -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div id="particles-js"></div>
+
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="Home">
+                <span class="logo-text">DS</span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="#home" class="nav-link" role="menuitem">Início</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">Sobre Mim</a></li>
+                <li role="none"><a href="#skills" class="nav-link" role="menuitem">Habilidades</a></li>
+                <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projetos</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contato</a></li>
+            </ul>
+
+            <!-- Theme Toggle Button -->
+            <button class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle Theme">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 id="hero-title" class="hero-title">
+                        Olá, eu sou <br> <span class="text-primary">Euller dos Santos Rodrigues Duarte</span>
+                    </h1>
+                    <div class="hero-subtitle">
+                        <span class="typing-text" aria-live="polite">Data Scientist</span>
+                        <span class="cursor" aria-hidden="true">|</span>
+                    </div>
+                    <p class="hero-description text-justify">
+                        Olá, seja muito bem-vindo (a) ao meu portfólio de projetos de Ciência de Dados. Nessa página, eu
+                        demonstro minhas habilidades de resolver problemas de negócio utilizando conceitos e ferramentas
+                        da Ciência de Dados, através de projetos com dados públicos. Você vai encontrar também,
+                        habilidades, ferramentas e conceitos envolvendo a Ciência de Dados. Sinta-se à vontade para
+                        entrar em contato através dos links no final da página.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Meus Projetos</a>
+                        <a href="#contact" class="btn btn-primary">Entre em Contato</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="./assets/images/perfil/1_Image.jpg" alt="Professional headshot of Euller dos Santos"
+                        class="avatar">
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator" aria-hidden="true">
+                <span class="scroll-text">Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title" class="section-title">Sobre Mim</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="hero-description text-justify">
+                            Sou graduando em Engenharia Elétrica pelo Instituto Federal de Educação, Ciência e
+                            Tecnologia do Maranhão e venho direcionando minha formação para a área de Ciência de Dados.
+                            Tenho me dedicado ao estudo de linguagens de programação, ferramentas analíticas, Métricas
+                            de Negócios e fundamentos estatísticos, sempre com ênfase no pensamento crítico e na
+                            resolução de problemas reais.
+                        </p>
+                        <p class="hero-description text-justify">
+                            Atualmente, desenvolvo projetos práticos utilizando dados públicos, aplicando técnicas de
+                            análise, visualização e modelagem para transformar informações em ideias relevantes. Estou
+                            em busca de uma oportunidade para atuar profissionalmente como Cientista de Dados,
+                            contribuindo para a melhoria da tomada de decisão nas empresas por meio da construção de
+                            soluções orientadas a dados.
+                        </p>
+
+                    </div>
+                    <div class="about-image">
+                        <div class="about-img-wrapper">
+                            <div class="data-viz-container" aria-label="Visualização interativa de análise de dados">
+                                <div class="code-editor">
+                                    <div class="editor-header">
+                                        <div class="editor-controls">
+                                            <span class="control-btn close"></span>
+                                            <span class="control-btn minimize"></span>
+                                            <span class="control-btn maximize"></span>
+                                        </div>
+                                        <div class="file-name">data_analysis.py</div>
+                                    </div>
+                                    <div class="editor-content">
+                                        <div class="line-numbers">
+                                            <!-- JS will populate this -->
+                                        </div>
+                                        <div class="code-content">
+                                            <!-- JS will populate this -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 id="skills-title" class="section-title">Habilidades & Ferramentas</h2>
+
+                <div class="skills-tabs">
+                    <div class="tabs-nav">
+                        <button class="tab-link active" data-tab="languages">Linguagens e Bancos de Dados</button>
+                        <button class="tab-link" data-tab="visualization">Visualização de Dados</button>
+                        <button class="tab-link" data-tab="ml">Estatística e Machine Learning</button>
+                        <button class="tab-link" data-tab="swe">Engenharia de Software</button>
+                    </div>
+
+                    <div class="tabs-content">
+                        <!-- Tab 1: Languages & Databases -->
+                        <div id="languages" class="tab-pane active">
+                            <!-- O HTML atual já funciona perfeitamente -->
+                            <div class="skills-grid">
+
+                                <div class="skill-item">
+                                    <img src="./assets/images/Icons/Python.svg" alt="Ícone do Python"
+                                        class="skill-icon">
+                                    <h4 class="skill-name">Python</h4>
+                                    <p class="skill-description">Linguagem principal para Data Science, Machine Learning
+                                        e automação.</p>
+                                </div>
+
+                                <div class="skill-item">
+                                    <img src="./assets/images/Icons/Jupyter.svg" alt="Ícone do Jupyter"
+                                        class="skill-icon">
+                                    <h4 class="skill-name">Jupyter</h4>
+                                    <p class="skill-description">Ambiente interativo para desenvolvimento de código e
+                                        documentação.</p>
+                                </div>
+
+                                <div class="skill-item">
+                                    <img src="./assets/images/Icons/Pandas.svg" alt="Ícone do Pandas"
+                                        class="skill-icon">
+                                    <h4 class="skill-name">Pandas</h4>
+                                    <p class="skill-description">Biblioteca para manipulação, limpeza e análise de dados
+                                        estruturados.</p>
+                                </div>
+
+                                <div class="skill-item effect-medium effect-glow" data-tech="sqlite">
+                                    <i class="devicon-sqlite-plain colored"></i>
+                                    <h4 class="skill-name">SQLite</h4>
+                                    <p class="skill-description">Bancos de dados leves para prototipagem e aplicações
+                                        menores.</p>
+                                </div>
+
+                                <div class="skill-item effect-intense effect-particles" data-tech="postgresql">
+                                    <i class="devicon-postgresql-plain colored"></i>
+                                    <h4 class="skill-name">PostgreSQL</h4>
+                                    <p class="skill-description">Bancos de dados relacionais robustos para grandes
+                                        volumes de dados.</p>
+                                </div>
+
+                                <div class="skill-item effect-medium effect-waves" data-tech="sqlserver">
+                                    <img src="./assets/images/Icons/SQL_Server.svg" alt="Ícone do SQL Server"
+                                        class="skill-icon">
+                                    <h4 class="skill-name">SQL Server</h4>
+                                    <p class="skill-description">Gerenciamento e consulta de dados em ambientes
+                                        corporativos.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 2: Data Visualization -->
+                        <div id="visualization" class="tab-pane">
+                            <div class="skills-grid">
+
+                                <div class="skill-item">
+                                    <img src="./assets/images/Icons/Matplotlib.svg" alt="Ícone do SQL Server"
+                                        class="skill-icon">
+                                    <h4 class="skill-name">Matplotlib</h4>
+                                    <p class="skill-description">Biblioteca para criação de gráficos estáticos e
+                                        interativos.</p>
+                                </div>
+
+                                <div class="skill-item">
+                                    <!-- Linha 293 -->
+                                    <img src="./assets/images/Icons/statistics.svg" alt="Statistics" class="skill-icon">
+                                    
+                                    <!-- Linha 252 -->
+                                    <img src="./assets/images/Icons/seaborn.svg" alt="Ícone do Seaborn" class="skill-icon">
+                                    
+                                    <!-- Linha 342 -->
+                                    <img src="./assets/images/Icons/Github.svg" alt="Ícone do GitHub" class="skill-icon">
+                                    <h4 class="skill-name">Seaborn</h4>
+                                    <p class="skill-description">Visualizações estatísticas de alta qualidade.</p>
+                                </div>
+
+                                <div class="skill-item">
+                                    <i class="devicon-plotly-plain colored"></i>
+                                    <h4 class="skill-name">Plotly</h4>
+                                    <p class="skill-description">Gráficos interativos para web e dashboards.</p>
+                                </div>
+
+                                <div class="skill-item">
+                                    <img src="./assets/images/Icons/PowerBI.svg" alt="Ícone do Power BI"
+                                        class="skill-icon">
+                                    <h4 class="skill-name">Power BI</h4>
+                                    <p class="skill-description">Criação de dashboards interativos para BI.</p>
+                                </div>
+
+                                <div class="skill-item">
+                                    <img src="./assets/images/Icons/looker.svg" alt="Ícone do Looker Studio"
+                                        class="skill-icon">
+                                    <h4 class="skill-name">Looker Studio</h4>
+                                    <p class="skill-description">Relatórios personalizados e integração com Google
+                                        Analytics.</p>
+                                </div>
+
+                                <div class="skill-item">
+                                    <img src="./assets/images/Icons/Excel.svg" alt="Ícone do Excel" class="skill-icon">
+                                    <h4 class="skill-name">Excel</h4>
+                                    <p class="skill-description">Análise de dados e criação de relatórios empresariais.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 3: Statistics & Machine Learning -->
+                        <div id="ml" class="tab-pane">
+                            <div class="skills-grid">
+
+                                <div class="skill-item">
+                                    <img src="./assets/images/Icons/Statistics.svg" alt="Statistics" class="skill-icon">
+                                    <h4 class="skill-name">Estatística Descritiva</h4>
+                                    <p class="skill-description">Localização, dispersão, assimetria, kurtosis e
+                                        densidade.</p>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="./assets/images/Icons/Algorithms.svg" alt="Ícone do GitHub"
+                                        class="skill-icon">
+                                    <h4 class="skill-name">Algoritmos ML</h4>
+                                    <p class="skill-description">Regressão, classificação, clusterização e "learn to
+                                        rank".</p>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-balance-scale" style="color: var(--primary-color);"></i>
+                                    <h4 class="skill-name">Balanceamento</h4>
+                                    <p class="skill-description">Técnicas de balanceamento, seleção de atributos e
+                                        dimensão.</p>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="./assets/images/Icons/Metrics.svg" alt="Metrics" class="skill-icon">
+                                    <h4 class="skill-name">Métricas</h4>
+                                    <p class="skill-description">RMSE, MAE, MAPE, Matriz de Confusão, Curva ROC, AUC.
+                                    </p>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="devicon-scikitlearn-plain colored"></i>
+                                    <h4 class="skill-name">Scikit-learn</h4>
+                                    <p class="skill-description">Biblioteca principal para algoritmos de Machine
+                                        Learning.</p>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="./assets/images/Icons/Scipy.svg" alt="Ícone do Scipy" class="skill-icon">
+                                    <h4 class="skill-name">SciPy</h4>
+                                    <p class="skill-description">Funções científicas e computação de alta performance.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 4: Software Engineering -->
+                        <div id="swe" class="tab-pane">
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <i class="devicon-git-plain colored"></i>
+                                    <h4 class="skill-name">Git</h4>
+                                    <p class="skill-description">Controle de versão e colaboração em projetos.</p>
+                                </div>
+
+                                <div class="skill-item">
+                                    <img src="./assets/images/Icons/Github.svg" alt="Ícone do GitHub"
+                                        class="skill-icon">
+                                    <h4 class="skill-name">GitHub</h4>
+                                    <p class="skill-description">Hospedagem de repositórios e colaboração.</p>
+                                </div>
+
+                                <div class="skill-item">
+                                    <i class="devicon-gitlab-plain colored"></i>
+                                    <h4 class="skill-name">GitLab</h4>
+                                    <p class="skill-description">Plataforma DevOps completa para CI/CD.</p>
+                                </div>
+
+                                <div class="skill-item">
+                                    <img src="./assets/images/Icons/UV.svg" alt="Ícone do Virtual Environment"
+                                        class="skill-icon">
+                                    <h4 class="skill-name">Virtual Environment</h4>
+                                    <p class="skill-description">Isolamento de dependências para projetos Python.</p>
+                                </div>
+
+                                <div class="skill-item">
+                                    <i class="devicon-streamlit-plain colored"></i>
+                                    <h4 class="skill-name">Streamlit</h4>
+                                    <p class="skill-description">Criação rápida de apps de dados interativos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 id="projects-title" class="section-title">Projetos</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card" data-project-id="1" data-project-title="Customer Churn Prediction"
+                        data-project-image-src="./assets/images/Preview/1_Image.jpg"
+                        data-project-long-desc="Este projeto foca na previsão de evasão de clientes (churn) usando um modelo de machine learning. Foram aplicados algoritmos de ensemble, como Random Forest e XGBoost, para alcançar uma alta precisão. A análise de importância das features revelou os principais fatores que contribuem para o churn, permitindo ações de retenção mais eficazes."
+                        data-project-tech="Python,Scikit-learn,Pandas,Random Forest,XGBoost,Tableau"
+                        data-project-github-link="https://github.com/euller/customer-churn-prediction"
+                        data-project-live-link="#">
+                        <div class="project-image">
+                            <img src="./assets/images/Preview/1_Image.jpg"
+                                alt="Customer Churn Prediction project screenshot" loading="lazy">
+                            <div class="project-actions">
+                                <a href="https://github.com/euller/customer-churn-prediction" target="_blank"
+                                    rel="noopener noreferrer" class="project-action-btn"
+                                    aria-label="Ver código no GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="project-action-btn"
+                                    aria-label="Ver projeto ao vivo">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Customer Churn Prediction</h3>
+                            <p class="project-description">
+                                Modelo de ML para prever o churn de clientes, alcançando 94% de acurácia com análise de
+                                features.
+                            </p>
+                            <div class="project-tech">
+                                <h4 class="tech-title">Tecnologias Usadas</h4>
+                                <div class="tech-icons">
+                                    <img src="./assets/images/Icons/Python.svg" title="Python" alt="Python icon" class="tech-icon-svg">
+                                    <i class="devicon-scikitlearn-plain colored" title="Scikit-learn"></i>
+                                    <img src="./assets/images/Icons/Pandas.svg" title="Pandas" alt="Pandas icon" class="tech-icon-svg">
+                                </div>
+                            </div>
+                            <button class="btn btn-secondary btn-details">Detalhes</button>
+                        </div>
+                    </article>
+
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-project-id="2" data-project-title="Stock Price Forecasting"
+                        data-project-image-src="./assets/images/Preview/2_Image.jpg"
+                        data-project-long-desc="Um modelo de deep learning (LSTM) foi desenvolvido para prever os preços de ações. O projeto integra indicadores técnicos do mercado financeiro e análise de sentimento de notícias (NLP) para melhorar a precisão das previsões. Uma API foi criada para fornecer as previsões em tempo real."
+                        data-project-tech="Python,TensorFlow,Keras,LSTM,NLP,API"
+                        data-project-github-link="https://github.com/euller" data-project-live-link="#">
+                        <div class="project-image">
+                            <img src="./assets/images/Preview/2_Image.jpg"
+                                alt="Stock Price Forecasting project screenshot" loading="lazy">
+                            <div class="project-actions">
+                                <a href="https://github.com/euller" target="_blank" rel="noopener noreferrer"
+                                    class="project-action-btn" aria-label="Ver código no GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="project-action-btn"
+                                    aria-label="Ver projeto ao vivo">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Stock Price Forecasting</h3>
+                            <p class="project-description">
+                                Modelo LSTM de Deep Learning para prever preços de ações, com integração de indicadores
+                                técnicos e análise de sentimento.
+                            </p>
+                            <div class="project-tech">
+                                <h4 class="tech-title">Tecnologias Usadas</h4>
+                                <div class="tech-icons">
+                                    <i class="devicon-python-plain colored" title="Python"></i>
+                                    <i class="devicon-tensorflow-original colored" title="TensorFlow"></i>
+                                    <i class="devicon-keras-plain colored" title="Keras"></i>
+                                    <i class="fas fa-brain" title="LSTM"></i>
+                                    <i class="fas fa-comments" title="NLP"></i>
+                                    <i class="fas fa-cogs" title="API"></i>
+                                </div>
+                            </div>
+                            <button class="btn btn-secondary btn-details">Detalhes</button>
+                        </div>
+                    </article>
+
+
+                    <!-- Project 3 -->
+                    <article class="project-card" data-project-id="3"
+                        data-project-title="Healthcare Analytics Dashboard"
+                        data-project-image-src="./assets/images/Preview/3_Image.jpg"
+                        data-project-long-desc="Dashboard interativo desenvolvido para a gestão hospitalar. A ferramenta oferece análise em tempo real do fluxo de pacientes, utilização de leitos e otimização de recursos. Algoritmos de otimização foram implementados para sugerir alocação de equipe e equipamentos."
+                        data-project-tech="Power BI,SQL Server,Real-time,Healthcare,DAX"
+                        data-project-github-link="https://github.com/euller" data-project-live-link="#">
+                        <div class="project-image">
+                            <img src="./assets/images/Preview/3_Image.jpg"
+                                alt="Healthcare Analytics Dashboard project screenshot" loading="lazy">
+                            <div class="project-actions">
+                                <a href="https://github.com/euller" target="_blank" rel="noopener noreferrer"
+                                    class="project-action-btn" aria-label="Ver código no GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="project-action-btn"
+                                    aria-label="Ver projeto ao vivo">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Healthcare Analytics Dashboard</h3>
+                            <p class="project-description">
+                                Dashboard interativo para gestão hospitalar com análise de fluxo de pacientes e
+                                otimização de recursos em tempo real.
+                            </p>
+                            <div class="project-tech">
+                                <h4 class="tech-title">Tecnologias Usadas</h4>
+                                <div class="tech-icons">
+                                    <img src="./assets/images/Icons/PowerBI.svg" title="Power BI" alt="Power BI icon" class="tech-icon-svg">
+                                    <img src="./assets/images/Icons/SQL_Server.svg" title="SQL Server" alt="SQL Server icon" class="tech-icon-svg">
+                                    <i class="fas fa-bolt" title="Real-time"></i>
+                                    <i class="fas fa-heart-pulse" title="Healthcare"></i>
+                                    <i class="fas fa-table-cells" title="DAX"></i>
+                                </div>
+                            </div>
+                            <button class="btn btn-secondary btn-details">Detalhes</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" class="section-title">Entre em Contato</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Vamos nos Conectar</h3>
+                        <p class="text-justify text-indent">
+                            Estou sempre interessado em discutir novas oportunidades,
+                            colaborações ou compartilhar insights sobre ciência de dados.
+                        </p>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <span>euller.santos.duarte@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                                <span>+55 (99) 99216-8287</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                <span>Açailândia, Maranhão</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/euller-santos" target="_blank" rel="noopener noreferrer"
+                                class="social-link social-link-no-bg" aria-label="LinkedIn Profile">
+                                <img src="./assets/images/Icons/LinkedIn.svg" alt="LinkedIn">
+                            </a>
+                            <a href="https://github.com/euller" target="_blank" rel="noopener noreferrer"
+                                class="social-link social-link-no-bg" aria-label="GitHub Profile">
+                                <img src="./assets/images/Icons/github_1.svg" alt="GitHub">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Formulário de Contato -->
+                    <form class="contact-form" action="https://formspree.io/f/mldwpjwg" method="POST" novalidate>
+                        <h3>Enviar Mensagem</h3>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" id="name" name="name" class="form-input" required
+                                aria-describedby="name-error">
+                            <div id="name-error" class="error-message" role="alert"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required
+                                aria-describedby="email-error">
+                            <div id="email-error" class="error-message" role="alert"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Assunto</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required
+                                aria-describedby="subject-error">
+                            <div id="subject-error" class="error-message" role="alert"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required
+                                aria-describedby="message-error"></textarea>
+                            <div id="message-error" class="error-message" role="alert"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit">
+                            <span class="submit-text">Enviar Mensagem</span>
+                            <span class="submit-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>
+                                Enviando...
+                            </span>
+                        </button>
+                        <div class="form-status" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 Data Science Portfolio. Todos os Direitos Reservados.</p>
+                <p>Feito com muito <span style="color: red;">❤️</span> e codado com muito ☕</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <button class="modal-close-btn" aria-label="Fechar Detalhes do Projeto">&times;</button>
+            <div class="modal-body">
+                <img id="modal-img" src="" alt="Imagem do Projeto" class="modal-img">
+                <h3 id="modal-title" class="modal-title"></h3>
+                <div id="modal-tech" class="project-tech">
+                    <!-- Tech icons will be dynamically inserted here by JavaScript -->
+                </div>
+                <p id="modal-desc"></p>
+                <div class="modal-links">
+                    <a id="modal-github" href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a id="modal-live" href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-eye"></i> Ver Projeto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.12.0/tsparticles.slim.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
